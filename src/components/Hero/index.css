@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: 500;
+  font-display: block;
+}
+
+.hero-wrapper {
+  background-image: url("../../assets/images/heroBg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 69px 24px 34.12px;
+  margin: 0 auto;
+  font-display: block;
+}
+
+.crypto-title {
+  margin-bottom: 69px;
+}
+
+.cryptoh1 {
+  color: rgb(135, 206, 235);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  width: 960px;
+  text-align: center;
+  margin: 0 156px 0 80px;
+}
+
+.crypto-title p {
+  width: 1150px;
+  color: rgb(169, 169, 169);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.98px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.carousel-track {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.carousel-item img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.crypto-code {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.crypto-code h3 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.crypto-code h4 {
+  color: rgb(14, 203, 129);
+  font-family: "Roboto";
+  font-size: 15.75px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.crypto-value h2,
+.crypto-value h2 span {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 21.83px;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.crypto-value h2 span {
+  margin-right: 5px;
+}
+
+.loader {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+}

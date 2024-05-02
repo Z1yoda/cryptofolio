@@ -1,0 +1,14 @@
+.chart-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 65px 40px 20px;
+}
+
+.loaderInfo {
+  margin-left: 45vw;
+  margin-top: 40vh;
+  width: 160px;
+  height: 160px;
+}

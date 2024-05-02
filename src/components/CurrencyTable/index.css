@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+.table-wrapper {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.2);
+  background: #16171a;
+  margin-bottom: 20px;
+}
+
+thead {
+  width: 1232px;
+}
+
+.headTr {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 19px 16px; */
+  background: rgb(135, 206, 235);
+  border-bottom: 1px solid rgb(81, 81, 81);
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.first {
+  text-align: start;
+  width: 445.27px;
+  padding: 19px 16px;
+}
+
+.second,
+.fourth {
+  text-align: end;
+  width: 263.66px;
+  padding: 19px 16px;
+}
+
+.third {
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  align-items: center;
+  padding: 19px 16px;
+  width: 259.73px;
+}
+
+.bodyTr {
+  display: flex;
+  border-bottom: 1px solid rgb(81, 81, 81);
+  cursor: pointer;
+}
+
+.bodyTd {
+  display: flex;
+  gap: 15px;
+}
+
+.bodyTd img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.code-name {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.code-name h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31.46px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+}
+
+.code-name h4 {
+  color: rgb(169, 169, 169);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.02px;
+  letter-spacing: 0.15px;
+}
+
+.second h3,
+.fourth h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.02px;
+  letter-spacing: 0.15px;
+  padding-top: 17px;
+}
+
+.third h4 {
+  display: inline;
+  color: rgb(14, 203, 129);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.02px;
+  letter-spacing: 0.15px;
+}
+
+.third img {
+  margin-right: 17px;
+}

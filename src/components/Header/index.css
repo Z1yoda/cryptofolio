@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: block;
+}
+
+.container {
+  width: 1232px;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: rgb(135, 206, 235);
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+.select-button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.select {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+
+.select-button button {
+  border: none;
+  outline: none;
+  width: 133px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: rgb(135, 206, 235);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24.5px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.watchlist-wrapper {
+  position: absolute;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 511px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background: rgb(81, 81, 81);
+}
+
+.watchlist-wrapper h1 {
+  margin-top: 32px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 24.5px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.items-wrapper {
+  padding: 39px 38px 0 36px;
+  display: grid;
+  grid-template-columns: 198px 198px;
+  grid-column-gap: 41px;
+  grid-row-gap: 36px;
+}
+
+.watchlistBtn {
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.currency-wrapper {
+  margin: 18px 0 13px;
+}
+
+.currency-wrapper h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41.99px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.currency-wrapper input {
+  width: 100%;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+  padding: 18px 0 18px 14px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  outline: none;
+  margin-bottom: 20px;
+}
