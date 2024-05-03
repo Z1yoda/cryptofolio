@@ -60,7 +60,7 @@ const TableRow = ({ crypto }) => {
                 <h3><span>{symbol}</span>{numberWithCommas(crypto.current_price.toFixed(2))}</h3>
             </td>
             <td className='third'>
-                <img src={GreenOrLight(crypto.id) ? lightEye : greenEye} alt="" />
+                <img src={GreenOrLight(crypto.id) ? greenEye : lightEye} alt="" />
                 <h4 style={{ color: crypto.price_change_percentage_24h > 0 ? "rgb(14, 203, 129)" : "rgb(255, 0, 0)" }}>
                     {crypto.price_change_percentage_24h > 0 ? '+' + crypto.price_change_percentage_24h.toFixed(2) : crypto.price_change_percentage_24h.toFixed(2)}%
                 </h4>
