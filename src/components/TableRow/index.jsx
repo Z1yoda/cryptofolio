@@ -39,9 +39,12 @@ const TableRow = ({ crypto }) => {
 
     function GreenOrLight(id) {
         const watchlist = JSON.parse(localStorage.getItem("watchlist"));
-        const watchlists = watchlist.filter((crypto) => crypto.cryptoId === id);
+        let watchlists = []
+        if (watchlist && watchlist.length > 0) {
+            watchlists = watchlist.length > 0 && watchlist.filter((crypto) => crypto.cryptoId === id);
+        }
 
-        return watchlists.length > 0;
+        return watchlists?.length > 0;
     }
 
     return (

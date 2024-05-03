@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './index.css';
 import { useCryptoContext } from '../../context/CryptoContext';
 
 function WatchlistItem() {
+    const [watched, setWatched] = useState()
     const { watchlistItem, setWatchlistItem } = useCryptoContext();
+
+    useEffect(() => {
+        const watchlist = JSON.parse(localStorage.getItem("watchlist"));
+        setWatched(watchlist)
+    }, [watchlistItem])
 
     function handleRemove(id) {
         const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -13,7 +19,7 @@ function WatchlistItem() {
     }
 
     return (
-        watchlistItem && watchlistItem.map((crypto) => (
+        watched && watched.map((crypto) => (
             <div key={crypto.cryptoId} className='item-wrapper'>
                 <img src={crypto.image} alt="crypto image" />
                 <h4>₹ {crypto.price}</h4>
