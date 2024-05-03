@@ -4,7 +4,7 @@ import { useCryptoContext } from '../../context/CryptoContext';
 
 function WatchlistItem() {
     const [watched, setWatched] = useState()
-    const { watchlistItem, setWatchlistItem } = useCryptoContext();
+    const { watchlistItem, setWatchlistItem, symbol } = useCryptoContext();
 
     useEffect(() => {
         const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -22,7 +22,7 @@ function WatchlistItem() {
         watched && watched.map((crypto) => (
             <div key={crypto.cryptoId} className='item-wrapper'>
                 <img src={crypto.image} alt="crypto image" />
-                <h4>₹ {crypto.price}</h4>
+                <h4>{symbol} {crypto.price}</h4>
                 <button onClick={() => handleRemove(crypto.cryptoId)}>remove</button>
             </div>
         ))

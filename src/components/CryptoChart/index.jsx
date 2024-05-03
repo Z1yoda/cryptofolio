@@ -14,7 +14,7 @@ function CryptoChart() {
 
     const { currency, days, } = useCryptoContext()
 
-    const { data } = useFetch(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=${days}`);
+    const { data } = useFetch(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=${days ? days : 1}`);
 
     return (
         <div className='chart-wrapper'>
