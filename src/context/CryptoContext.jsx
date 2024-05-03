@@ -8,7 +8,7 @@ export const CryptoProvider = ({ children }) => {
     const [symbol, setSymbol] = useState("$");
     const [error, setError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const [days, setDays] = useState(null);
+    const [days, setDays] = useState(1);
     const [dataHistory, setDataHistory] = useState(false);
     const [searchCrypto, setSearchCrypto] = useState(false);
     const [watchlistItem, setWatchlistItem] = useState([])

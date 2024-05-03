@@ -5,7 +5,7 @@
 }
 
 .watchlist-wrapper {
-  position: absolute;
+  position: fixed;
   overflow-x: hidden;
   transition: 0.5s;
   width: 511px;

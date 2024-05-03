@@ -9,7 +9,7 @@ import numberWithCommas from '../../functions/CurrencyForamt';
 import { FadeLoader } from 'react-spinners';
 
 function Hero() {
-    const { currency, setSymbol, symbol, isLoading } = useCryptoContext();
+    const { currency, setSymbol, symbol, isLoading, error } = useCryptoContext();
     const navigate = useNavigate()
     const { data } = useFetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=gecko_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h`);
 
@@ -45,7 +45,9 @@ function Hero() {
             <img src={crypto.image} alt="" />
             <div className='crypto-code'>
                 <h3>{crypto.symbol}</h3>
-                <h4>{crypto.price_change_percentage_24h.toFixed(2)}%</h4>
+                <h4 style={{ color: crypto.price_change_percentage_24h > 0 ? "rgb(14, 203, 129)" : "rgb(255, 0, 0)" }}>
+                    {crypto.price_change_percentage_24h > 0 ? '+' + crypto.price_change_percentage_24h.toFixed(2) : crypto.price_change_percentage_24h.toFixed(2)}%
+                </h4>
             </div>
             <div className="crypto-value">
                 <h2><span>{symbol}</span>{numberWithCommas(crypto.current_price.toFixed(2))}</h2>
@@ -60,7 +62,7 @@ function Hero() {
                     <h1 className='cryptoh1'>CRYPTOFOLIO WATCH LIST</h1>
                     <p>Get all the Info regarding your favorite Crypto Currency</p>
                 </div>
-                {isLoading && <FadeLoader className='loader' color='#87CEEB' />}
+                {isLoading || error && <FadeLoader className='loader' color='#87CEEB' />}
                 {data && (
                     <div className="carousel-track">
                         <div className="carousel">

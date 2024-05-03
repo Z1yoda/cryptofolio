@@ -3,7 +3,7 @@ import './index.css'
 import { useCryptoContext } from '../../context/CryptoContext'
 
 function ChartTimeline() {
-    const { setDays } = useCryptoContext(1)
+    const { setDays } = useCryptoContext()
     const [isClicked, setIsClicked] = useState(1)
 
     function handleClick(e) {

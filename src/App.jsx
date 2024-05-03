@@ -10,17 +10,11 @@ function App() {
 
   return (
     <>
-      {error ?
-        <ErrorPage></ErrorPage> :
-        <>
-          <Header></Header>
-          <Routes>
-            <Route path='/' element={<Home></Home>}></Route>
-            <Route path='/cryptoview/:id' element={<CryptoView></CryptoView>}></Route>
-          </Routes>
-        </>
-      }
-
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/cryptoview/:id' element={<CryptoView></CryptoView>}></Route>
+      </Routes>
     </>
   )
 }
